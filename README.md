@@ -501,3 +501,92 @@ int main()
 	
 	return 0;
 }
+
+#include <stdio.h>
+
+
+int main()
+{
+	int N;
+
+	scanf("%d", &N);
+
+	while (N > 0)
+	{
+		printf("%d\n", N);
+		N--;
+	}
+	return 0;
+}
+{
+	int a, b, c, d, Sum;
+	float Average;
+	scanf("%d %d %d %d", &a, &b, &c, &d);
+	Sum = a + b + c + d;
+	Average = Sum / 4.0;
+	printf("Sum=%d;Average=%.1f", Sum, Average);
+	return 0;
+}
+
+#include<string.h>
+int Add(int x, int y)
+{
+	int z = x + y;
+	return z;
+}
+void test()
+{
+	int a = 1;
+	a++;
+	printf("a=%d\n", a);
+}
+
+int main()
+{
+	int i = 0;
+	while (i < 5)
+	{
+		test();
+		i++;
+	}
+
+	int a = 10;
+	printf("%d\n", a);
+	printf("%d\n",!a);
+
+	char arr1[] = "abc";
+	char arr2[] = { 'a','b','c','\0' };
+    printf("%s\n", arr1);
+	printf("%s\n", arr2);
+	printf("%d\n", strlen(arr1));
+	printf("%d\n", strlen(arr2));
+
+	int arr[10] = { 0 };
+	int sz = 0;
+	printf("%d\n", sizeof(arr));
+	sz = sizeof(arr) / sizeof(arr[0]);
+	printf("sz=%d\n", sz);
+
+	int a = 10;
+	printf("%d\n", sizeof(a));
+	printf("%d\n", sizeof(int));
+	printf("%d\n", sizeof a);
+
+	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	int i = 0;
+	while (i < 10)
+	{
+		printf("%d\n", arr[i]);
+		i++;
+	}
+
+	int num1 = 10;
+	int num2 = 20;
+	int sum = 0;
+	int a = 100;
+	int b = 200;
+	//sum = Add(num1, num2);
+	sum = Add(a, b);
+	printf("sum=%d\n", sum);
+	return 0;
+}
